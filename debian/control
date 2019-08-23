@@ -7,7 +7,7 @@ Standards-Version: 3.6.0
 Package: hildon-games-wrapper-dev
 Section: devel
 Architecture: any
-Depends: hildon-games-wrapper0 (= ${Source-Version}), libc6-dev
+Depends: hildon-games-wrapper0 (= ${source:Version}), libc6-dev
 Provides: lessertunjo-dev, libshadowapp-dev
 Conflicts: lessertunjo-dev, libshadowapp-dev
 Description: Development headers for hildon-games-wrapper.
@@ -25,7 +25,7 @@ Description: D-BUS and some other wrapping library for games.
 Package: hildon-games-wrapper0-dbg
 Section: devel
 Architecture: any
-Depends: hildon-games-wrapper0 (= ${Source-Version})
+Depends: hildon-games-wrapper0 (= ${source:Version})
 Provides: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
 Conflicts: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
 Description: Debug symbols for hildon-games-wrapper0
