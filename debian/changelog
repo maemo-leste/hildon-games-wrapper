@@ -1,0 +1,132 @@
+hildon-games-wrapper (1.9.4-5+0m5) unstable; urgency=low
+
+  * This entry has been added by BIFH queue processor
+    Suffix +0m5 added to package revision
+
+ -- Urho Konttori <urho.konttori@nokia.com>  Fri, 19 Feb 2010 14:59:06 +0200
+
+hildon-games-wrapper (1.9.4-5) unstable; urgency=low
+
+  * Fixes: NB#142763 - "Game not started yet" banner displayed while playing
+  * Fixes: MB#3748 - Erroneous "Game not started yet" message
+  Thanks for patches to Javier S. Pedro
+
+ -- David Kedves <dkedves@blumsoft.eu>  Wed, 03 Feb 2010 09:09:08 +0100
+
+hildon-games-wrapper (1.9.4-4) unstable; urgency=low
+
+  * Fixes: NB#141722 - hildon-games-wrapper crashes in hgw_conf_request_string
+    if gconf key has no value
+  * Fixes: MB#5276 - hildon-games-wrapper crashes in hgw_conf_request_string
+    if gconf key has no value
+  Thanks for patches to Javier S. Pedro
+
+ -- David Kedves <dkedves@blumsoft.eu>  Wed, 27 Jan 2010 13:50:34 +0100
+
+hildon-games-wrapper (1.9.4-3) unstable; urgency=low
+
+  * Fixes: NB#109541 - Coverity findings in hildon-game-wrapper 
+
+ -- David Kedves <dkedves@blumsoft.eu>  Fri, 03 Apr 2009 11:21:38 +0200
+
+hildon-games-wrapper (1.9.4-2) unstable; urgency=low
+
+  * Updated dependencies (libc-dev -> libc6-dev)
+  * Added debug package
+
+ -- David Kedves <dkedves@blumsoft.eu>  Fri, 06 Mar 2009 11:13:00 +0100
+
+hildon-games-wrapper (1.9.4-1) unstable; urgency=low
+
+  * libhgw/: moved gconf wrapping aliases from backwards compatibility layer
+    from libhgw/hgw_compat.c to libhgw/hgw_conf.c because gcc 4.2 does
+    validity check on compile time rather than link time. Fixes: NB#78710
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Wed,  2 Jan 2008 13:05:21 +0200
+
+hildon-games-wrapper (1.9.3-1) unstable; urgency=low
+
+  * libhgw/Makefile: Created symlink 'libshadowapp.so' which is required by
+    backwards compatibility layer on source level.
+  * shared dbus connections shouldn't be closed, changed close to unref in
+    hgw_init.c
+  * Fixes: NB#60483, NB#60978, NB#61403, NB#58802
+
+ -- Jakub Pavelek <jakub.pavelek@nokia.com>  Thu, 19 Jul 2007 10:41:42 +0300
+
+hildon-games-wrapper (1.9.2-2) unstable; urgency=low
+
+  * Added/cleaned copyright information.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Wed, 27 Jun 2007 13:09:21 +0300
+
+hildon-games-wrapper (1.9.2-1) unstable; urgency=low
+
+  * libhgw/: Added device state notifications.
+  * libhgw/hgw_init.c: Corrected automatic service/path/interface naming.
+  * libhgw/hgw_conf.c: When retrieving boolean values, they are read into int
+    first before being stored into char element.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Wed, 25 Apr 2007 16:31:12 +0300
+
+hildon-games-wrapper (1.9.1-2) unstable; urgency=low
+
+  * libhgw/hgw_conf.c:231: used strdup() on return value. Previously caused
+    problems as return value should be permanent but it got overwritten.
+    Fixes: NB#53772
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Thu, 19 Apr 2007 11:43:21 +0300
+
+hildon-games-wrapper (1.9.1-1) unstable; urgency=low
+
+  * libhgw/hgw_init.c: Added fallback service name in the case it cannot be
+    obtained from elsewhere (org.maemo.hgwXXXX where XXXX is PID in hex form).
+  * libhgw/: Now connects also to system bus for GConf. Fixes: NB#53772
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Tue, 10 Apr 2007 18:32:27 +0300
+
+hildon-games-wrapper (1.9.0-3) unstable; urgency=low
+
+  * libshadowapp.h: now includes hgw/hgw.h instead of libhgw.h. This was
+    mistake made in renaming of the package. Fixes: NB#53791
+  * libshadowapp.h: hgw_compat_set_msg_cb_ functions are renamed to
+    hgw_compat_set_cb_ which are real names of the functions.
+  * hgw.h: defined values for the error enumerations to avoid them from
+    getting undesired values.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Tue, 10 Apr 2007 12:08:42 +0300
+
+hildon-games-wrapper (1.9.0-2) unstable; urgency=low
+
+  * debian/control: exact versions of lessertunjo, libshadowapp and archtunjo
+    are no longer provided.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Tue, 27 Mar 2007 14:56:58 +0300
+
+hildon-games-wrapper (1.9.0-1) unstable; urgency=low
+
+  * Incremented version number greatly without touching the code.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Wed, 21 Mar 2007 18:27:32 +0200
+
+hildon-games-wrapper (0.0.2) unstable; urgency=low
+
+  * Renamed the package.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Wed, 21 Mar 2007 10:59:01 +0200
+
+tunjo (0.0.1-2) unstable; urgency=low
+
+  * Cleanup release.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Fri,  5 Jan 2007 15:02:08 +0200
+
+tunjo (0.0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Kuisma Salonen <kuisma.salonen@nokia.com>  Fri,  5 Jan 2007 10:29:41 +0200
+
+Local variables:
+mode: debian-changelog
+End:

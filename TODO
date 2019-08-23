@@ -1,0 +1,10 @@
+* libhgw/hgw_msg.c: Clean up hgw_msg_check_incoming()
+* libhgw/: Implement internal incoming message queue. Some messages in the
+    queue eliminate others, like state change notification. Would allow to peek
+    into the queue in search of messages and user (app developer) would get
+    most recent information by message elimination. Would also allow to
+    implement function which checks current state more feasibly.
+
+
+API:
+  * Consider whether to allow termination notifying in hgw_notify_startup().

@@ -1,0 +1,32 @@
+Source: hildon-games-wrapper
+Priority: optional
+Maintainer: Karoliina Salminen <karoliina.t.salminen@nokia.com>
+Build-Depends: debhelper (>= 4.0.0), libc6-dev, libdbus-1-dev, libgconf2-dev
+Standards-Version: 3.6.0
+
+Package: hildon-games-wrapper-dev
+Section: devel
+Architecture: any
+Depends: hildon-games-wrapper0 (= ${Source-Version}), libc6-dev
+Provides: lessertunjo-dev, libshadowapp-dev
+Conflicts: lessertunjo-dev, libshadowapp-dev
+Description: Development headers for hildon-games-wrapper.
+ <insert long description, indented with spaces>
+
+Package: hildon-games-wrapper0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: lessertunjo0, libshadowapp0, archtunjo
+Conflicts: lessertunjo0, libshadowapp0, archtunjo
+Description: D-BUS and some other wrapping library for games.
+ <insert long description, indented with spaces>
+
+Package: hildon-games-wrapper0-dbg
+Section: devel
+Architecture: any
+Depends: hildon-games-wrapper0 (= ${Source-Version})
+Provides: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
+Conflicts: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
+Description: Debug symbols for hildon-games-wrapper0
+
