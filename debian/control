@@ -1,4 +1,5 @@
 Source: hildon-games-wrapper
+Section: games
 Priority: optional
 Maintainer: Karoliina Salminen <karoliina.t.salminen@nokia.com>
 Build-Depends: debhelper (>= 4.0.0), libc6-dev, libdbus-1-dev, libgconf2-dev
