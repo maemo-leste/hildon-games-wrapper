@@ -22,12 +22,3 @@ Provides: lessertunjo0, libshadowapp0, archtunjo
 Conflicts: lessertunjo0, libshadowapp0, archtunjo
 Description: D-BUS and some other wrapping library for games.
  <insert long description, indented with spaces>
-
-Package: hildon-games-wrapper0-dbg
-Section: devel
-Architecture: any
-Depends: hildon-games-wrapper0 (= ${source:Version})
-Provides: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
-Conflicts: lessertunjo0-dbg, libshadowapp0-dbg, archtunjo-dbg
-Description: Debug symbols for hildon-games-wrapper0
-
